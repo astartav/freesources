@@ -24,7 +24,7 @@
 </head>
 <body>
 <div class="header">
-<h1>The Best Intranet Ever</h1>
+<h1>The Best Satyr Ever</h1>
 </div>
 <form class="admin_form" method="post" action="http://localhost/index.php/add_site_into_db">
 <input type="text" name="parentid", value="ID категории", size="12" /><br><br>
