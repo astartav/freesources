@@ -24,7 +24,7 @@
 </head>
 <body>
 <div class="header">
-<h1>The Best Satyr Ever</h1>
+<h1>The Best Intranet Ever</h1>
 </div>
 <form class="admin_form" method="post" action="http://localhost/index.php/add_site_into_db">
 <input type="text" name="parentid", value="ID категории", size="12" /><br><br>
@@ -40,10 +40,10 @@
 	<option value="Флеш">Флеш</option>
 	<option value="Фотография">Фотография</option>
 </select><br><br>
-<p>
+Язык:<br>
 <input type="radio" name="language" value="russian" checked /> Русский<br>
 <input type="radio" name="language" value="english" /> Английский<br><br>
-Рейтинг
+Рейтинг:
 <input type="text" name="ourrating" size="3" /></p>
 <input type="submit" name="go" value="Отправить" />
 </form>
