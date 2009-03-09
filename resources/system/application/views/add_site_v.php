@@ -33,12 +33,12 @@
 <textarea name="smalldesc", value="Краткое описание (200 символов максимум)", maxlength="200", rows="4", cols="61"></textarea><br><br>
 <textarea  name="fulldesc", value="Полное описание", rows="6", cols="61"></textarea><br><br>
 <select multiple name="parts">
-<option value="Программирование">Программирование</option>
-<option value="Веб-дизайн">Веб-дизайн</option>
-<option value="Дизайн">Дизайн</option>
-<option value="Арт">Арт</option>
-<option value="Флеш">Флеш</option>
-<option value="Фотография">Фотография</option>
+	<option value="Программирование">Программирование</option>
+	<option value="Веб-дизайн">Веб-дизайн</option>
+	<option value="Дизайн">Дизайн</option>
+	<option value="Арт">Арт</option>
+	<option value="Флеш">Флеш</option>
+	<option value="Фотография">Фотография</option>
 </select><br><br>
 <p>
 <input type="radio" name="language" value="russian" checked /> Русский<br>
