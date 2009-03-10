@@ -47,8 +47,13 @@ $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = "";
-$db['default']['char_set'] = "utf8";
-$db['default']['dbcollat'] = "utf8_general_ci";
+$db['default']['char_set'] = "cp1251";
+$db['default']['dbcollat'] = "cp1251_general_ci";
+/*@mysql_query("SET NAMES 'cp1251'; 
+SET CHARACTER SET 'cp1251'; 
+SET character_set_client='cp1251'; 
+SET character_set_connection='cp1251'; 
+SET character_set_results='cp1251'");*/
 
 
 /* End of file database.php */
