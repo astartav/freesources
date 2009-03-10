@@ -26,7 +26,7 @@
 <div class="header">
 <h1>The Best Satyr Ever</h1>
 </div>
-<form class="admin_form" method="post" action="http://resources/index.php/add_site_into_db">
+<form class="admin_form" method="post" action="http://localhost/index.php/add_site_into_db">
 <input type="text" name="parentid", value="ID категории", size="12" /><br><br>
 <input type="text" name="sitename", value="Название сайта", size="80" /><br><br>
 <input type="text" name="link", value="Ссылка на сайт", size="80" /><br><br>
