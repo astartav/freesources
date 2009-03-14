@@ -3,23 +3,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <title>Main Page</title>
+<style>
+.body_right {
+ position: absolute;
+ left: 35%;
+ width: 30%;
+ background: orange;
+ padding: 5px;
+}
+</style>
 </head>
 <body>
-<a href="http://localhost/index.php/add_site">Add site</a>
+<a style="background: silver;" href="http://localhost/index.php/add_site">Add site</a>
+<div class="body_right">
 <?php 
-
 foreach ($all_sites->result() as $row) {
-   echo $row->parentid;
-   echo $row->name;
-   echo $row->link;
-   echo $row->smalldesc;
-   echo $row->fulldesc;
-   echo $row->language;
-   echo $row->ourrating;
- 
-  }
-?> 
-Здеьс ттескт яЧНО!?
-
+ if ($row->ourrating>90){?>
+  <a href="<?php echo $row->link;?>"><?php echo $row->name;?></a><br>
+  <a style="font-size: 9px;" href="category<?php echo $row->parentid;?>">Категория <?php echo $row->parentid;?></a>
+   <?php
+   echo "<br>";  
+   echo $row->smalldesc; 
+   echo "<br>";
+   //echo $row->fulldesc;
+   //echo $row->language;
+   //echo $row->ourrating;?>
+   <div style="text-align: right;"><a href="id">info</a></div>
+   <hr>
+    <?php }} ?>
+     </div>
 </body>
 </html>
