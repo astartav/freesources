@@ -30,8 +30,16 @@
 <input type="text" name="parentid", value="ID категории", size="12" /><br><br>
 <input type="text" name="sitename", value="Название сайта", size="80" /><br><br>
 <input type="text" name="link", value="Ссылка на сайт", size="80" /><br><br>
-<textarea name="smalldesc", value="Краткое описание (200 символов максимум)", maxlength="200", rows="4", cols="61"></textarea><br><br>
-<textarea  name="fulldesc", value="Полное описание", rows="6", cols="61"></textarea><br><br>
+<?php  $smalldescdata=array( 'name' => 'smalldesc',
+'value' => 'Краткое описание сайта (200 символов max)',
+'maxlength' => '200','rows' => '4', 'cols' => '61' );
+echo form_textarea($smalldescdata); 
+echo "<br><br>";
+ $fulldescdata=array( 'name' => 'fulldesc',
+  'value' => 'Полное описание сайта (без ограничений)',
+  'rows' => '6', 'cols' => '61' );
+echo form_textarea($fulldescdata);?>
+<br><br>
 <select multiple name="parts">
 	<option value="Программирование">Программирование</option>
 	<option value="Веб-дизайн">Веб-дизайн</option>
