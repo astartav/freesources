@@ -31,7 +31,7 @@ function photography(){
 
  }
 function programs(){
- $sites = $this->db->query('SELECT * FROM sites WHERE programs="Adobe Photoshop"');
+ $sites = $this->db->query('SELECT * FROM sites WHERE programs IS NOT NULL');
  return $sites;
 
  }
