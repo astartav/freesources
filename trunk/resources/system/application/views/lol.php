@@ -9,7 +9,7 @@
  left: 20%;
  width: 20%;
  right: 10%;
- background: orange;
+ background: red;
 }
 .lol{
  position: absolute;
