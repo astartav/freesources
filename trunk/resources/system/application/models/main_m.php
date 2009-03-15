@@ -30,6 +30,11 @@ function photography(){
  return $sites;
 
  }
+function programs(){
+ $sites = $this->db->query('SELECT * FROM sites WHERE programs="Adobe Photoshop"');
+ return $sites;
+
+ }
 
 }
 ?>

@@ -9,6 +9,7 @@ class Main extends Controller {
   $data->design = $this->Main_m->design(); 
   $data->art = $this->Main_m->art(); 
   $data->flash = $this->Main_m->flash(); 
+  $data->programs = $this->Main_m->programs();
   $data->photography = $this->Main_m->photography(); 
   $this->load->view('main_v', $data);
  
