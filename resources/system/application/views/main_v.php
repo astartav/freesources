@@ -20,6 +20,15 @@
  width: 60%;
  background: orange;
 }
+.programs {
+ position: absolute;
+ top: 13%;
+ bottom: 3%;
+ width: 20%;
+ left: 2px;
+ background: violet;
+ color: white;
+}
 .body_sites_pic {
  position: absolute;
  left: -100px;
@@ -35,8 +44,7 @@
  position: relative;
  top: 14%;
  height: 12%;
- background: pink;
- 
+ background: pink; 
 }
 </style>
 </head>
@@ -45,6 +53,9 @@
 <h1>The Best Links Ever</h1>
 <a style="background: silver;" href="http://localhost/index.php/add_site">Add site</a>
 </div>
+<div class="programs"><ul>
+<?php foreach ($programs->result() as $row) {?><li><a href="<?php echo $row->link ?>"><?php echo $row->name;?></a></li><?php } ?> 
+</ul></div>
 <div class="body_sites">
 <div class="programming">
  <?php 

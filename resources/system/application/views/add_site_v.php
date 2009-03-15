@@ -65,7 +65,7 @@ echo form_textarea($fulldescdata);?>
 	<option value="Баннеры">Баннеры</option>
 	<option value="Рекламная фотография">Рекламная фотография</option>
 </select><br><br>
-<select multiple name="categories">
+<select multiple name="blocks">
 	<option value="Блоги">Блоги</option>
 	<option value="Форумы">Форумы</option>
 	<option value="Ресурсы">Ресурсы</option>
