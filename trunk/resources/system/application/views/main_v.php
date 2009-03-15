@@ -5,19 +5,38 @@
 <title>Main Page</title>
 <style>
 .head {
-position: absolute;
-width: 100%;
-height: 10%;
-top: 0%;
-left: 0%;
-background: red;
+ position: absolute;
+ width: 100%;
+ height: 10%;
+ top: 0%;
+ left: 0%;
+ background: red;
 }
 .body_sites {
  position: absolute;
- top: 15%;
- left: 35%;
- width: 30%;
- padding: 5px;
+ top: 13%;
+ bottom: 3%;
+ left: 30%;
+ width: 60%;
+ background: orange;
+}
+.body_sites_pic {
+ position: absolute;
+ left: -100px;
+ background: red;
+ border: 1px solid black;
+}
+.programming {
+ position: relative;
+ height: 12%;
+ background: green;
+}
+.webdesign {
+ position: relative;
+ top: 14%;
+ height: 12%;
+ background: pink;
+ 
 }
 </style>
 </head>
@@ -27,21 +46,40 @@ background: red;
 <a style="background: silver;" href="http://localhost/index.php/add_site">Add site</a>
 </div>
 <div class="body_sites">
-<?php 
-foreach ($all_sites->result() as $row) {
- if ($row->ourrating>90){?>
-  <div style="background: silver;"><a href="<?php echo $row->link;?>"><?php echo $row->name;?></a><span style="position: absolute; right: 5px; background: red;">99</span><br>
-  <a style="font-size: 9px;" href="category<?php echo $row->parentid;?>">Категория <?php echo $row->parentid;?></a></div>
-   <?php
-   //echo "<br>";  
+<div class="programming">
+ <?php 
+ foreach ($programming->result() as $row) {
+  if ($row->ourrating>90){?>
+   <div class="programming">
+   <div class="body_sites_pic"><img src="http://p-userpic.livejournal.com/85439587/13466523" /></div>
+   <div><a href="<?php echo $row->link;?>"><?php echo $row->name;?></a><span style="position: absolute; right: 3%;">123 <b><span style="color: red;">+</span> <span style="color: blue">-</span></b></span><br></div>
+   <div style="position: absolute;"><a style="font-size: 9px;" href="category<?php echo $row->parentid;?>">Категория <?php echo $row->parentid;?></a></div><br>
+  <?php
    echo $row->smalldesc; 
    echo "<br>";
-   //echo $row->fulldesc;
-   //echo $row->language;
-   //echo $row->ourrating;?>
-   <div style="text-align: right; background: yellow;"><a href="id">info</a> | <a href="idcomment">комментировать (23)</a></div>
-   <hr>
-    <?php }} ?>
-     </div>
+  ?>
+  <div style="text-align: right;"><a href="id">info</a> | <a href="idcomment">комментировать (23)</a></div>
+  <hr>
+  <?php }} ?>
+  </div>
+  
+ 
+ <?php  
+ foreach ($webdesign->result() as $row) {
+  if ($row->ourrating>90){?>
+   <div class="webdesign">
+   <div class="body_sites_pic"><img src="http://p-userpic.livejournal.com/85439587/13466523" /></div>
+   <div><a href="<?php echo $row->link;?>"><?php echo $row->name;?></a><span style="position: absolute; right: 3%;">123 <b><span style="color: red;">+</span> <span style="color: blue">-</span></b></span><br></div>
+   <div style="position: absolute;"><a style="font-size: 9px;" href="category<?php echo $row->parentid;?>">Категория <?php echo $row->parentid;?></a></div><br>
+  <?php
+   echo $row->smalldesc; 
+   echo "<br>";
+  ?>
+  <div style="text-align: right;"><a href="id">info</a> | <a href="idcomment">комментировать (23)</a></div>
+ <hr>
+ <?php }} ?>
+ </div>
+ 
+ </div>
 </body>
 </html>
