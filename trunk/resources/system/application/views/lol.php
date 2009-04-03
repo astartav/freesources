@@ -4,30 +4,32 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <title>Lol</title>
 <style>
-.ctr{
- position: absolute;
- left: 20%;
- width: 20%;
- right: 10%;
- background: red;
-}
-.lol{
- position: absolute;
- width: 15%;
- background: #999999;
-}
+    .ctr {
+        position: absolute;
+        left: 20%;
+        width: 20%;
+        right: 10%;
+        background: red;
+    } .lol {
+        position: absolute;
+        width: 15%;
+        background: #999999;
+    }
 </style>
 </head>
 <body>
 <div class="lol">
-11111111111111111<br>
-12231323123<br>
-asdasdasdasdasd
+    11111111111111111
+    <br>
+    12231323123
+    <br>
+    asdasdasdasdasd
 </div>
 <div class="ctr">
-<?php foreach ($list as $element)
-echo $element."<br>"; 
-?>
+    <?php
+    foreach ($list as $element)
+    echo $element."<br>";
+    ?>
 </div>
 </body>
 </html>
