@@ -35,6 +35,9 @@ function programs(){
  return $sites;
 
  }
-
+function preview(){
+ $sites= $this->db->query('SELECT preview FROM sites');
+ return $sites;		
+} 
 }
 ?>
