@@ -59,7 +59,7 @@
     </ul>
 </div>
 <div class="body_sites">
-    <img class="img" src="http://webmorda.kz/site2img/?u=astartav.livejournal.com&s=s&q=5" />
+    <img src="AvaTarAnd.jpg">
     <div class="programming">
         <?php
         foreach ($programming->result() as $row) {
@@ -91,7 +91,7 @@
         if ($row->ourrating > 90) { ?>
     <div class="webdesign">
         <div class="body_sites_pic">
-            <img src="http://p-userpic.livejournal.com/85439587/13466523" />
+            <img alt="" src="<?php echo $row->preview; ?>" />
         </div>
         <div>
             <a href="<?php echo $row->link;?>"><?php echo $row->name;?></a>

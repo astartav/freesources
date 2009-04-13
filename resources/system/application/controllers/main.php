@@ -11,6 +11,7 @@ class Main extends Controller {
   $data->flash = $this->Main_m->flash(); 
   $data->programs = $this->Main_m->programs();
   $data->photography = $this->Main_m->photography(); 
+  $data->preview = $this->Main_m->preview();
   $this->load->view('main_v', $data);
  
  }
